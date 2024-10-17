@@ -1,0 +1,71 @@
+
+.feedback-form{
+    border-radius: 8px;
+padding: 24px;
+width: 408px;
+height: 296px;
+}
+.submit-btn {
+border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4e75ff;
+    font-family: inherit;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border: none;
+       
+}
+.submit-btn:hover, .submit-btn:focus {
+    background: #6c8cff;
+}
+.input {
+    display: block;
+    margin-bottom: 8px;
+    width: 360px;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 8px 16px;
+    outline: transparent;
+        background-color: transparent;
+        line-height: 150%;
+            letter-spacing: 0.04em;
+            color: #2e2f42;
+}
+.text-input {
+    display: block;
+    margin-bottom: 16px;
+    width: 360px;
+    height: 80px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 8px 16px;
+    outline: transparent;
+    font-family: inherit;
+    font-size: inherit;
+        background-color: transparent;
+        line-height: 150%;
+            letter-spacing: 0.04em;
+            color: #2e2f42; 
+            resize: none;
+}
+.form-name {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+}
+.input:hover {
+    border-color: #000;
+
+}
+.input:active {
+    border-color: #808080;
+ 
+}

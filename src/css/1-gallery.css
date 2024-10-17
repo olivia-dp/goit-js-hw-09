@@ -1,0 +1,38 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 156px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-link {
+  cursor: url('../icon/bxs_hand-down.svg'), pointer;
+}
+
+.gallery-image {
+  transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
