@@ -63,6 +63,9 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 const container = document.querySelector(".gallery")
 container.insertAdjacentHTML("beforeend", createGallery(images))
@@ -76,19 +79,12 @@ function createGallery(arr) {
     
 }
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 
-container.addEventListener("click", event => {
-    event.preventDefault();
-    if (event.target === event.currentTarget) {
-        return;
-    }
 
-    const instance = basicLightbox.create(`
-    <div class = "modal"><img src="${event.target.dataset.source}" width="1112" heigth="640"></div>
-`)
-instance.show()
-    
-})
-
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+  overlayOpacity: 0.8,
+  widthRatio: 0.9,
+  heigtRatio: 0.9,
+}); 
